@@ -1,0 +1,1247 @@
+{
+  "id" : "acar-e3r8",
+  "name" : "Refrigerated Truck Rates and Availability",
+  "assetType" : "dataset",
+  "attribution" : "AMS Specialty Crops",
+  "attributionLink" : "https://www.ams.usda.gov/market-news/fruits-vegetables",
+  "averageRating" : 0,
+  "category" : "Truck",
+  "createdAt" : 1554406308,
+  "description" : "Data from AMS Market News Specialty Crops Program, including weekly refrigerated truck rates and availability by origin, destination, and commodity. The Transportation Services Division assigns a broader region to the origins in order to join to refrigerated truck rate and availability data.",
+  "diciBackend" : false,
+  "displayType" : "table",
+  "domainCName" : "agtransport.usda.gov",
+  "downloadCount" : 4871,
+  "hideFromCatalog" : false,
+  "hideFromDataJson" : false,
+  "locked" : false,
+  "newBackend" : true,
+  "numberOfComments" : 0,
+  "oid" : 34140561,
+  "provenance" : "official",
+  "publicationAppendEnabled" : false,
+  "publicationDate" : 1589404180,
+  "publicationGroup" : 16087868,
+  "publicationStage" : "published",
+  "rowsUpdatedAt" : 1793286347,
+  "rowsUpdatedBy" : "aiqt-4thn",
+  "tableId" : 17118259,
+  "totalTimesRated" : 0,
+  "viewCount" : 47726,
+  "viewLastModified" : 1793286232,
+  "viewType" : "tabular",
+  "approvals" : [ {
+    "reviewedAt" : 1724089075,
+    "reviewedAutomatically" : false,
+    "state" : "rejected",
+    "submissionId" : 6517142,
+    "submissionObject" : "revision",
+    "submissionOutcome" : "update_published_asset",
+    "submittedAt" : 1723822217,
+    "targetAudience" : "public",
+    "workflowId" : 531,
+    "reviewer" : {
+      "id" : "ga9v-zrtn",
+      "displayName" : "Kranti Mulik"
+    },
+    "submissionDetails" : {
+      "id" : 329
+    },
+    "submitter" : {
+      "id" : "ga9v-zrtn",
+      "displayName" : "Kranti Mulik"
+    }
+  }, {
+    "reviewedAt" : 1724089072,
+    "reviewedAutomatically" : false,
+    "state" : "rejected",
+    "submissionId" : 6517108,
+    "submissionObject" : "revision",
+    "submissionOutcome" : "update_published_asset",
+    "submittedAt" : 1723817825,
+    "targetAudience" : "public",
+    "workflowId" : 531,
+    "reviewer" : {
+      "id" : "ga9v-zrtn",
+      "displayName" : "Kranti Mulik"
+    },
+    "submissionDetails" : {
+      "id" : 328
+    },
+    "submitter" : {
+      "id" : "ga9v-zrtn",
+      "displayName" : "Kranti Mulik"
+    }
+  }, {
+    "reviewedAt" : 1723822258,
+    "reviewedAutomatically" : false,
+    "state" : "rejected",
+    "submissionId" : 6516083,
+    "submissionObject" : "revision",
+    "submissionOutcome" : "update_published_asset",
+    "submittedAt" : 1723763408,
+    "targetAudience" : "public",
+    "workflowId" : 531,
+    "reviewer" : {
+      "id" : "ga9v-zrtn",
+      "displayName" : "Kranti Mulik"
+    },
+    "submissionDetails" : {
+      "id" : 327
+    },
+    "submitter" : {
+      "id" : "ga9v-zrtn",
+      "displayName" : "Kranti Mulik"
+    }
+  }, {
+    "reviewedAt" : 1723763416,
+    "reviewedAutomatically" : false,
+    "state" : "rejected",
+    "submissionId" : 6515855,
+    "submissionObject" : "revision",
+    "submissionOutcome" : "update_published_asset",
+    "submittedAt" : 1723762546,
+    "targetAudience" : "public",
+    "workflowId" : 531,
+    "reviewer" : {
+      "id" : "ccbq-aqb3",
+      "displayName" : "Alexis Heyman"
+    },
+    "submissionDetails" : {
+      "id" : 326
+    },
+    "submitter" : {
+      "id" : "ccbq-aqb3",
+      "displayName" : "Alexis Heyman"
+    }
+  }, {
+    "reviewedAt" : 1723762425,
+    "reviewedAutomatically" : false,
+    "state" : "rejected",
+    "submissionId" : 6515467,
+    "submissionObject" : "revision",
+    "submissionOutcome" : "update_published_asset",
+    "submittedAt" : 1723759985,
+    "targetAudience" : "public",
+    "workflowId" : 531,
+    "reviewer" : {
+      "id" : "ccbq-aqb3",
+      "displayName" : "Alexis Heyman"
+    },
+    "submissionDetails" : {
+      "id" : 325
+    },
+    "submitter" : {
+      "id" : "ccbq-aqb3",
+      "displayName" : "Alexis Heyman"
+    }
+  }, {
+    "reviewedAt" : 1557886338,
+    "reviewedAutomatically" : false,
+    "state" : "approved",
+    "submissionId" : 2194528,
+    "submissionObject" : "public_audience_request",
+    "submissionOutcome" : "change_audience",
+    "submittedAt" : 1557886277,
+    "targetAudience" : "public",
+    "workflowId" : 531,
+    "reviewer" : {
+      "id" : "hnmi-8jer",
+      "displayName" : "Adam"
+    },
+    "submissionDetails" : {
+      "permissionType" : "read"
+    },
+    "submissionOutcomeApplication" : {
+      "endedAt" : 1557886338,
+      "failureCount" : 0,
+      "startedAt" : 1557886338,
+      "status" : "success"
+    },
+    "submitter" : {
+      "id" : "hnmi-8jer",
+      "displayName" : "Adam"
+    }
+  }, {
+    "message" : "The `strict_permissions` flag must be on to enable internal approvals.",
+    "state" : "unsubmittable",
+    "targetAudience" : "internal",
+    "workflowId" : 4623
+  } ],
+  "clientContext" : {
+    "clientContextVariables" : [ ],
+    "inheritedVariables" : { }
+  },
+  "columns" : [ {
+    "id" : 467640351,
+    "name" : "Date",
+    "dataTypeName" : "calendar_date",
+    "description" : "Week ending date.",
+    "fieldName" : "date",
+    "position" : 2,
+    "renderTypeName" : "calendar_date",
+    "tableColumnId" : 78961553,
+    "cachedContents" : {
+      "non_null" : "207024",
+      "largest" : "2026-10-27T00:00:00.000",
+      "null" : "0",
+      "top" : [ {
+        "item" : "2009-11-10T00:00:00.000",
+        "count" : "228"
+      }, {
+        "item" : "2009-12-15T00:00:00.000",
+        "count" : "226"
+      }, {
+        "item" : "2009-12-01T00:00:00.000",
+        "count" : "226"
+      }, {
+        "item" : "2009-12-08T00:00:00.000",
+        "count" : "226"
+      }, {
+        "item" : "2009-12-22T00:00:00.000",
+        "count" : "226"
+      }, {
+        "item" : "2009-11-17T00:00:00.000",
+        "count" : "223"
+      }, {
+        "item" : "2008-11-25T00:00:00.000",
+        "count" : "222"
+      }, {
+        "item" : "2008-11-18T00:00:00.000",
+        "count" : "222"
+      }, {
+        "item" : "2009-11-24T00:00:00.000",
+        "count" : "221"
+      }, {
+        "item" : "2015-05-05T00:00:00.000",
+        "count" : "221"
+      }, {
+        "item" : "2009-11-03T00:00:00.000",
+        "count" : "220"
+      }, {
+        "item" : "2008-12-02T00:00:00.000",
+        "count" : "219"
+      }, {
+        "item" : "2008-04-01T00:00:00.000",
+        "count" : "218"
+      }, {
+        "item" : "2008-11-04T00:00:00.000",
+        "count" : "218"
+      }, {
+        "item" : "2010-07-20T00:00:00.000",
+        "count" : "217"
+      }, {
+        "item" : "2015-03-31T00:00:00.000",
+        "count" : "216"
+      }, {
+        "item" : "2015-05-12T00:00:00.000",
+        "count" : "215"
+      }, {
+        "item" : "2004-05-18T00:00:00.000",
+        "count" : "214"
+      }, {
+        "item" : "2015-03-24T00:00:00.000",
+        "count" : "213"
+      }, {
+        "item" : "2008-05-13T00:00:00.000",
+        "count" : "213"
+      } ],
+      "smallest" : "2000-01-04T00:00:00.000",
+      "count" : "207024",
+      "cardinality" : "207024"
+    },
+    "format" : {
+      "view" : "date"
+    }
+  }, {
+    "id" : 467640352,
+    "name" : "Week",
+    "dataTypeName" : "number",
+    "description" : "Week number calculated from the reported week ending date (Date field). Week 1 is the first week of the year with a week ending date falling on or after January 4. In other words, it is the first reported week of data which includes four days in the new year. Values range from 1 to 52 or 53, depending on the year.",
+    "fieldName" : "week",
+    "position" : 3,
+    "renderTypeName" : "number",
+    "tableColumnId" : 81859832,
+    "cachedContents" : {
+      "non_null" : "207024",
+      "largest" : "53",
+      "null" : "0",
+      "top" : [ {
+        "item" : "13",
+        "count" : "4241"
+      }, {
+        "item" : "46",
+        "count" : "4228"
+      }, {
+        "item" : "12",
+        "count" : "4192"
+      }, {
+        "item" : "47",
+        "count" : "4186"
+      }, {
+        "item" : "14",
+        "count" : "4182"
+      }, {
+        "item" : "48",
+        "count" : "4164"
+      }, {
+        "item" : "24",
+        "count" : "4162"
+      }, {
+        "item" : "25",
+        "count" : "4154"
+      }, {
+        "item" : "11",
+        "count" : "4145"
+      }, {
+        "item" : "23",
+        "count" : "4139"
+      }, {
+        "item" : "50",
+        "count" : "4112"
+      }, {
+        "item" : "1",
+        "count" : "4107"
+      }, {
+        "item" : "45",
+        "count" : "4101"
+      }, {
+        "item" : "2",
+        "count" : "4098"
+      }, {
+        "item" : "10",
+        "count" : "4082"
+      }, {
+        "item" : "49",
+        "count" : "4077"
+      }, {
+        "item" : "22",
+        "count" : "4073"
+      }, {
+        "item" : "20",
+        "count" : "4071"
+      }, {
+        "item" : "15",
+        "count" : "4069"
+      }, {
+        "item" : "4",
+        "count" : "4064"
+      } ],
+      "smallest" : "1",
+      "count" : "207024",
+      "cardinality" : "207024"
+    },
+    "format" : { }
+  }, {
+    "id" : 467640353,
+    "name" : "Month",
+    "dataTypeName" : "number",
+    "description" : "Month number calculated from the reported week ending date (Date field). Week ending dates falling before the fourth day of the month are assigned to the previous month. For example, a week ending date falling on February 1st, 2nd, or 3rd would correspond to “1” (January), since there are less than four days in the reported week that fall in February. Values range from 1 through 12, where 1 refers to January, 2 to February, etc.",
+    "fieldName" : "month",
+    "position" : 4,
+    "renderTypeName" : "number",
+    "tableColumnId" : 78961525,
+    "cachedContents" : {
+      "non_null" : "207024",
+      "largest" : "12",
+      "null" : "0",
+      "top" : [ {
+        "item" : "3",
+        "count" : "18360"
+      }, {
+        "item" : "12",
+        "count" : "18253"
+      }, {
+        "item" : "1",
+        "count" : "17974"
+      }, {
+        "item" : "5",
+        "count" : "17959"
+      }, {
+        "item" : "11",
+        "count" : "17779"
+      }, {
+        "item" : "6",
+        "count" : "17548"
+      }, {
+        "item" : "4",
+        "count" : "17478"
+      }, {
+        "item" : "7",
+        "count" : "17011"
+      }, {
+        "item" : "8",
+        "count" : "16466"
+      }, {
+        "item" : "2",
+        "count" : "16344"
+      }, {
+        "item" : "10",
+        "count" : "16252"
+      }, {
+        "item" : "9",
+        "count" : "15600"
+      } ],
+      "smallest" : "1",
+      "count" : "207024",
+      "cardinality" : "207024"
+    },
+    "format" : { }
+  }, {
+    "id" : 467640354,
+    "name" : "Quarter",
+    "dataTypeName" : "number",
+    "description" : "Calendar quarter extracted from month.",
+    "fieldName" : "quarter",
+    "position" : 5,
+    "renderTypeName" : "number",
+    "tableColumnId" : 78961522,
+    "cachedContents" : {
+      "non_null" : "207024",
+      "largest" : "4",
+      "null" : "0",
+      "top" : [ {
+        "item" : "2",
+        "count" : "52985"
+      }, {
+        "item" : "1",
+        "count" : "52678"
+      }, {
+        "item" : "4",
+        "count" : "52284"
+      }, {
+        "item" : "3",
+        "count" : "49077"
+      } ],
+      "smallest" : "1",
+      "count" : "207024",
+      "cardinality" : "207024"
+    },
+    "format" : { }
+  }, {
+    "id" : 467640355,
+    "name" : "Year",
+    "dataTypeName" : "number",
+    "description" : "Year number calculated from the reported week ending date (Date field). Week ending dates falling on or after January 4 correspond to the calendar year of the reported week. Week ending dates falling on or before January 3 correspond to the previous calendar year. For example, a week ending date falling on January 2, 2018 would be “2017.” Values range from 2000 to the present.",
+    "fieldName" : "year",
+    "position" : 6,
+    "renderTypeName" : "number",
+    "tableColumnId" : 78961556,
+    "cachedContents" : {
+      "non_null" : "207024",
+      "largest" : "2026",
+      "null" : "0",
+      "top" : [ {
+        "item" : "2008",
+        "count" : "10123"
+      }, {
+        "item" : "2015",
+        "count" : "10061"
+      }, {
+        "item" : "2009",
+        "count" : "9955"
+      }, {
+        "item" : "2016",
+        "count" : "9888"
+      }, {
+        "item" : "2010",
+        "count" : "9732"
+      }, {
+        "item" : "2014",
+        "count" : "9729"
+      }, {
+        "item" : "2007",
+        "count" : "9578"
+      }, {
+        "item" : "2011",
+        "count" : "9541"
+      }, {
+        "item" : "2012",
+        "count" : "9451"
+      }, {
+        "item" : "2017",
+        "count" : "9203"
+      }, {
+        "item" : "2013",
+        "count" : "9013"
+      }, {
+        "item" : "2018",
+        "count" : "8947"
+      }, {
+        "item" : "2020",
+        "count" : "8759"
+      }, {
+        "item" : "2019",
+        "count" : "8602"
+      }, {
+        "item" : "2004",
+        "count" : "8285"
+      }, {
+        "item" : "2006",
+        "count" : "8259"
+      }, {
+        "item" : "2005",
+        "count" : "7886"
+      }, {
+        "item" : "2021",
+        "count" : "7604"
+      }, {
+        "item" : "2023",
+        "count" : "7269"
+      }, {
+        "item" : "2022",
+        "count" : "6816"
+      } ],
+      "smallest" : "2000",
+      "count" : "207024",
+      "cardinality" : "207024"
+    },
+    "format" : {
+      "noCommas" : "true"
+    }
+  }, {
+    "id" : 467640356,
+    "name" : "Region",
+    "dataTypeName" : "text",
+    "description" : "TSD assigned region from destination. Nine regional crop origination markets: Arizona, California, Florida, the Great Lakes (Michigan, Minnesota, and Wisconsin), imports across the Mexico-Arizona border, imports across the Mexico-Texas border, New York, the Pacific Northwest (Idaho, Oregon, and Washington) and the Southeast (North Carolina, South Carolina, and Georgia).",
+    "fieldName" : "region",
+    "position" : 7,
+    "renderTypeName" : "text",
+    "tableColumnId" : 78961528,
+    "cachedContents" : {
+      "non_null" : "207024",
+      "largest" : "TEXAS",
+      "null" : "0",
+      "top" : [ {
+        "item" : "CALIFORNIA",
+        "count" : "58697"
+      }, {
+        "item" : "PNW",
+        "count" : "36752"
+      }, {
+        "item" : "GREAT LAKES",
+        "count" : "22069"
+      }, {
+        "item" : "OTHER",
+        "count" : "19869"
+      }, {
+        "item" : "SOUTHEAST",
+        "count" : "15918"
+      }, {
+        "item" : "FLORIDA",
+        "count" : "12142"
+      }, {
+        "item" : "MEXICO-TEXAS",
+        "count" : "9766"
+      }, {
+        "item" : "NEW YORK",
+        "count" : "8972"
+      }, {
+        "item" : "TEXAS",
+        "count" : "8098"
+      }, {
+        "item" : "MEXICO-ARIZONA",
+        "count" : "7219"
+      }, {
+        "item" : "ARIZONA",
+        "count" : "5763"
+      }, {
+        "item" : "MID-ATLANTIC",
+        "count" : "1210"
+      }, {
+        "item" : "INDIANA",
+        "count" : "445"
+      }, {
+        "item" : "MEXICO-CALIFORNIA",
+        "count" : "104"
+      } ],
+      "smallest" : "ARIZONA",
+      "count" : "207024",
+      "cardinality" : "207024"
+    },
+    "format" : { }
+  }, {
+    "id" : 467640357,
+    "name" : "Origin",
+    "dataTypeName" : "text",
+    "description" : "AMS designated district.",
+    "fieldName" : "origin",
+    "position" : 8,
+    "renderTypeName" : "text",
+    "tableColumnId" : 78961531,
+    "cachedContents" : {
+      "non_null" : "207024",
+      "largest" : "YAKIMA VALLEY AND WENATCHEE DISTRICT, WASHINGTON",
+      "null" : "0",
+      "top" : [ {
+        "item" : "YAKIMA VALLEY AND WENATCHEE DISTRICT, WASHINGTON",
+        "count" : "11055"
+      }, {
+        "item" : "UPPER VALLEY, TWIN FALLS-BURLEY DISTRICT IDAHO",
+        "count" : "10621"
+      }, {
+        "item" : "SOUTH DISTRICT CALIFORNIA",
+        "count" : "9516"
+      }, {
+        "item" : "SAN LUIS VALLEY COLORADO",
+        "count" : "9020"
+      }, {
+        "item" : "SANTA MARIA CALIFORNIA",
+        "count" : "8900"
+      }, {
+        "item" : "KERN DISTRICT CALIFORNIA",
+        "count" : "8516"
+      }, {
+        "item" : "CENTRAL WISCONSIN",
+        "count" : "8193"
+      }, {
+        "item" : "SALINAS-WATSONVILLE CALIFORNIA",
+        "count" : "7676"
+      }, {
+        "item" : "EASTERN NORTH CAROLINA",
+        "count" : "7498"
+      }, {
+        "item" : "MEXICO CROSSINGS THROUGH NOGALES, ARIZONA",
+        "count" : "7219"
+      }, {
+        "item" : "MEXICO CROSSINGS THROUGH TEXAS",
+        "count" : "7087"
+      }, {
+        "item" : "COLUMBIA BASIN WASHINGTON",
+        "count" : "6933"
+      }, {
+        "item" : "MICHIGAN",
+        "count" : "6784"
+      }, {
+        "item" : "IDAHO AND MALHEUR COUNTY, OREGON",
+        "count" : "6690"
+      }, {
+        "item" : "SAN JOAQUIN VALLEY CALIFORNIA",
+        "count" : "5627"
+      }, {
+        "item" : "CENTRAL AND SOUTH FLORIDA",
+        "count" : "5517"
+      }, {
+        "item" : "MINNESOTA-NORTH DAKOTA (RED RIVER VALLEY)",
+        "count" : "5446"
+      }, {
+        "item" : "IMPERIAL, PALO VERDE, AND COACHELLA VALLEYS, CALIFORNIA, CENTRAL AND WESTERN ARIZONA",
+        "count" : "5220"
+      }, {
+        "item" : "NEW YORK",
+        "count" : "5095"
+      }, {
+        "item" : "LOWER RIO GRANDE VALLEY, TEXAS",
+        "count" : "4934"
+      } ],
+      "smallest" : "APPALACHIAN DISTRICT (VA, WV, MD, PA)",
+      "count" : "207024",
+      "cardinality" : "207024"
+    },
+    "format" : { }
+  }, {
+    "id" : 467640358,
+    "name" : "Destination",
+    "dataTypeName" : "text",
+    "description" : "The ten cities of destination are Atlanta, Georgia; Baltimore, Maryland; Boston, Massachusetts; Chicago, Illinois; Dallas, Texas; Los Angeles, California; Miami, Florida; New York, New York; Philadelphia, Pennsylvania; and Seattle, Washington.",
+    "fieldName" : "destination",
+    "position" : 9,
+    "renderTypeName" : "text",
+    "tableColumnId" : 78961533,
+    "cachedContents" : {
+      "non_null" : "207024",
+      "largest" : "SEATTLE",
+      "null" : "0",
+      "top" : [ {
+        "item" : "NEW YORK",
+        "count" : "28838"
+      }, {
+        "item" : "CHICAGO",
+        "count" : "28361"
+      }, {
+        "item" : "ATLANTA",
+        "count" : "28258"
+      }, {
+        "item" : "PHILADELPHIA",
+        "count" : "23678"
+      }, {
+        "item" : "BOSTON",
+        "count" : "22857"
+      }, {
+        "item" : "DALLAS",
+        "count" : "19963"
+      }, {
+        "item" : "BALTIMORE",
+        "count" : "18780"
+      }, {
+        "item" : "MIAMI",
+        "count" : "17827"
+      }, {
+        "item" : "LOS ANGELES",
+        "count" : "13340"
+      }, {
+        "item" : "SEATTLE",
+        "count" : "5122"
+      } ],
+      "smallest" : "ATLANTA",
+      "count" : "207024",
+      "cardinality" : "207024"
+    },
+    "format" : { }
+  }, {
+    "id" : 467640359,
+    "name" : "Distance",
+    "dataTypeName" : "number",
+    "description" : "TSD estimated distance between origin and destination in miles.",
+    "fieldName" : "distance",
+    "position" : 10,
+    "renderTypeName" : "number",
+    "tableColumnId" : 78961535,
+    "cachedContents" : {
+      "non_null" : "206270",
+      "largest" : "3440",
+      "null" : "754",
+      "top" : [ {
+        "item" : "2700",
+        "count" : "6791"
+      }, {
+        "item" : "2900",
+        "count" : "4963"
+      }, {
+        "item" : "1300",
+        "count" : "4029"
+      }, {
+        "item" : "2600",
+        "count" : "3942"
+      }, {
+        "item" : "2030",
+        "count" : "3684"
+      }, {
+        "item" : "2050",
+        "count" : "3491"
+      }, {
+        "item" : "2800",
+        "count" : "3399"
+      }, {
+        "item" : "2650",
+        "count" : "3391"
+      }, {
+        "item" : "2000",
+        "count" : "3006"
+      }, {
+        "item" : "1600",
+        "count" : "3002"
+      }, {
+        "item" : "2100",
+        "count" : "2957"
+      }, {
+        "item" : "2550",
+        "count" : "2882"
+      }, {
+        "item" : "1000",
+        "count" : "2840"
+      }, {
+        "item" : "2350",
+        "count" : "2836"
+      }, {
+        "item" : "2400",
+        "count" : "2834"
+      }, {
+        "item" : "2200",
+        "count" : "2785"
+      }, {
+        "item" : "1100",
+        "count" : "2773"
+      }, {
+        "item" : "250",
+        "count" : "2749"
+      }, {
+        "item" : "770",
+        "count" : "2682"
+      }, {
+        "item" : "2500",
+        "count" : "2574"
+      } ],
+      "smallest" : "30",
+      "count" : "207024",
+      "cardinality" : "207024"
+    },
+    "format" : {
+      "noCommas" : "false",
+      "precision" : "0"
+    }
+  }, {
+    "id" : 467640360,
+    "name" : "Commodity",
+    "dataTypeName" : "text",
+    "description" : "Commodity mix applicable to rate and availability.",
+    "fieldName" : "commodity",
+    "position" : 11,
+    "renderTypeName" : "text",
+    "tableColumnId" : 78961538,
+    "cachedContents" : {
+      "non_null" : "207024",
+      "largest" : "WATERMELONS, ONIONS.",
+      "null" : "0",
+      "top" : [ {
+        "item" : "POTATOES",
+        "count" : "38424"
+      }, {
+        "item" : "ONIONS",
+        "count" : "16275"
+      }, {
+        "item" : "SWEET POTATOES",
+        "count" : "11422"
+      }, {
+        "item" : "APPLES",
+        "count" : "8804"
+      }, {
+        "item" : "POTATOES AND ONIONS",
+        "count" : "6164"
+      }, {
+        "item" : "APPLES AND PEARS",
+        "count" : "4536"
+      }, {
+        "item" : "MELONS",
+        "count" : "4245"
+      }, {
+        "item" : "LETTUCE AND MIXED VEGETABLES",
+        "count" : "3580"
+      }, {
+        "item" : "CARROTS AND GRAPES",
+        "count" : "3035"
+      }, {
+        "item" : "CABBAGE",
+        "count" : "2939"
+      }, {
+        "item" : "WATERMELONS",
+        "count" : "2816"
+      }, {
+        "item" : "CARROTS",
+        "count" : "2757"
+      }, {
+        "item" : "TOMATOES",
+        "count" : "2436"
+      }, {
+        "item" : "APPLES/PEARS",
+        "count" : "2395"
+      }, {
+        "item" : "MIXED VEGETABLES",
+        "count" : "2304"
+      }, {
+        "item" : "CITRUS",
+        "count" : "2263"
+      }, {
+        "item" : "DRY ONIONS",
+        "count" : "1965"
+      }, {
+        "item" : "DRY ONIONS, POTATOES",
+        "count" : "1953"
+      }, {
+        "item" : "CITRUS, AVOCADOS",
+        "count" : "1853"
+      }, {
+        "item" : "PEARS",
+        "count" : "1802"
+      } ],
+      "smallest" : "0NIONS/POTATOES",
+      "count" : "207024",
+      "cardinality" : "207024"
+    },
+    "format" : { }
+  }, {
+    "id" : 467640361,
+    "name" : "Week Low",
+    "dataTypeName" : "number",
+    "description" : "Minimum truck rate during week.",
+    "fieldName" : "weeklow",
+    "position" : 12,
+    "renderTypeName" : "number",
+    "tableColumnId" : 78961541,
+    "cachedContents" : {
+      "non_null" : "207024",
+      "largest" : "13900",
+      "null" : "0",
+      "top" : [ {
+        "item" : "2000",
+        "count" : "4515"
+      }, {
+        "item" : "3000",
+        "count" : "4419"
+      }, {
+        "item" : "3400",
+        "count" : "4003"
+      }, {
+        "item" : "2800",
+        "count" : "3725"
+      }, {
+        "item" : "1000",
+        "count" : "3636"
+      }, {
+        "item" : "2200",
+        "count" : "3523"
+      }, {
+        "item" : "1800",
+        "count" : "3523"
+      }, {
+        "item" : "4000",
+        "count" : "3505"
+      }, {
+        "item" : "1500",
+        "count" : "3344"
+      }, {
+        "item" : "2500",
+        "count" : "3290"
+      }, {
+        "item" : "800",
+        "count" : "3014"
+      }, {
+        "item" : "3800",
+        "count" : "2969"
+      }, {
+        "item" : "2400",
+        "count" : "2966"
+      }, {
+        "item" : "5000",
+        "count" : "2839"
+      }, {
+        "item" : "3200",
+        "count" : "2818"
+      }, {
+        "item" : "900",
+        "count" : "2717"
+      }, {
+        "item" : "5100",
+        "count" : "2698"
+      }, {
+        "item" : "1200",
+        "count" : "2653"
+      }, {
+        "item" : "6800",
+        "count" : "2563"
+      }, {
+        "item" : "4800",
+        "count" : "2537"
+      } ],
+      "smallest" : "11",
+      "count" : "207024",
+      "cardinality" : "207024"
+    },
+    "format" : {
+      "precision" : "0"
+    }
+  }, {
+    "id" : 467640362,
+    "name" : "Week High",
+    "dataTypeName" : "number",
+    "description" : "Maximum truck rate during week.",
+    "fieldName" : "weekhigh",
+    "position" : 13,
+    "renderTypeName" : "number",
+    "tableColumnId" : 78961544,
+    "cachedContents" : {
+      "non_null" : "206980",
+      "largest" : "38701",
+      "null" : "44",
+      "top" : [ {
+        "item" : "3000",
+        "count" : "4363"
+      }, {
+        "item" : "2000",
+        "count" : "3711"
+      }, {
+        "item" : "2500",
+        "count" : "3687"
+      }, {
+        "item" : "4000",
+        "count" : "3281"
+      }, {
+        "item" : "2400",
+        "count" : "3278"
+      }, {
+        "item" : "2800",
+        "count" : "3276"
+      }, {
+        "item" : "3400",
+        "count" : "3271"
+      }, {
+        "item" : "1000",
+        "count" : "3143"
+      }, {
+        "item" : "1500",
+        "count" : "3004"
+      }, {
+        "item" : "3200",
+        "count" : "2942"
+      }, {
+        "item" : "5000",
+        "count" : "2834"
+      }, {
+        "item" : "1200",
+        "count" : "2803"
+      }, {
+        "item" : "3500",
+        "count" : "2645"
+      }, {
+        "item" : "6000",
+        "count" : "2637"
+      }, {
+        "item" : "3600",
+        "count" : "2617"
+      }, {
+        "item" : "6800",
+        "count" : "2599"
+      }, {
+        "item" : "3800",
+        "count" : "2529"
+      }, {
+        "item" : "1800",
+        "count" : "2501"
+      }, {
+        "item" : "4500",
+        "count" : "2481"
+      }, {
+        "item" : "2200",
+        "count" : "2477"
+      } ],
+      "smallest" : "215",
+      "count" : "207024",
+      "cardinality" : "207024"
+    },
+    "format" : {
+      "precision" : "0"
+    }
+  }, {
+    "id" : 467640363,
+    "name" : "Midpoint",
+    "dataTypeName" : "number",
+    "description" : "Average of Week Low and High",
+    "fieldName" : "midpoint",
+    "position" : 14,
+    "renderTypeName" : "number",
+    "tableColumnId" : 78961547,
+    "cachedContents" : {
+      "non_null" : "206980",
+      "largest" : "14700",
+      "null" : "44",
+      "top" : [ {
+        "item" : "2500",
+        "count" : "2374"
+      }, {
+        "item" : "3000",
+        "count" : "2100"
+      }, {
+        "item" : "2250",
+        "count" : "2069"
+      }, {
+        "item" : "2000",
+        "count" : "1982"
+      }, {
+        "item" : "1500",
+        "count" : "1975"
+      }, {
+        "item" : "5100",
+        "count" : "1733"
+      }, {
+        "item" : "2900",
+        "count" : "1686"
+      }, {
+        "item" : "3400",
+        "count" : "1615"
+      }, {
+        "item" : "1750",
+        "count" : "1596"
+      }, {
+        "item" : "3500",
+        "count" : "1592"
+      }, {
+        "item" : "2300",
+        "count" : "1558"
+      }, {
+        "item" : "2150",
+        "count" : "1513"
+      }, {
+        "item" : "4300",
+        "count" : "1505"
+      }, {
+        "item" : "1900",
+        "count" : "1449"
+      }, {
+        "item" : "1000",
+        "count" : "1447"
+      }, {
+        "item" : "3100",
+        "count" : "1447"
+      }, {
+        "item" : "1700",
+        "count" : "1432"
+      }, {
+        "item" : "1250",
+        "count" : "1419"
+      }, {
+        "item" : "3900",
+        "count" : "1416"
+      }, {
+        "item" : "2200",
+        "count" : "1411"
+      } ],
+      "smallest" : "215",
+      "count" : "207024",
+      "cardinality" : "207024"
+    },
+    "format" : {
+      "noCommas" : "false",
+      "precision" : "0"
+    }
+  }, {
+    "id" : 467640364,
+    "name" : "Rate Per Mile",
+    "dataTypeName" : "number",
+    "description" : "Ratio of Midpoint to Distance",
+    "fieldName" : "rpm",
+    "position" : 15,
+    "renderTypeName" : "number",
+    "tableColumnId" : 78961559,
+    "cachedContents" : {
+      "non_null" : "206226",
+      "largest" : "41.666666667",
+      "null" : "798",
+      "top" : [ {
+        "item" : "2.5",
+        "count" : "2009"
+      }, {
+        "item" : "2",
+        "count" : "1582"
+      }, {
+        "item" : "3",
+        "count" : "1052"
+      }, {
+        "item" : "5",
+        "count" : "826"
+      }, {
+        "item" : "3.5",
+        "count" : "745"
+      }, {
+        "item" : "4.5454545455",
+        "count" : "692"
+      }, {
+        "item" : "2.25",
+        "count" : "574"
+      }, {
+        "item" : "2.3333333333",
+        "count" : "563"
+      }, {
+        "item" : "3.3333333333",
+        "count" : "551"
+      }, {
+        "item" : "4",
+        "count" : "517"
+      }, {
+        "item" : "2.2222222222",
+        "count" : "501"
+      }, {
+        "item" : "2.1428571429",
+        "count" : "499"
+      }, {
+        "item" : "2.75",
+        "count" : "497"
+      }, {
+        "item" : "2.6666666667",
+        "count" : "471"
+      }, {
+        "item" : "2.125",
+        "count" : "447"
+      }, {
+        "item" : "3.75",
+        "count" : "432"
+      }, {
+        "item" : "2.8333333333",
+        "count" : "405"
+      }, {
+        "item" : "3.5294117647",
+        "count" : "389"
+      }, {
+        "item" : "1.6666666667",
+        "count" : "359"
+      }, {
+        "item" : "3.125",
+        "count" : "348"
+      } ],
+      "smallest" : "0.13",
+      "count" : "207024",
+      "cardinality" : "207024"
+    },
+    "format" : {
+      "precision" : "2"
+    }
+  }, {
+    "id" : 467640365,
+    "name" : "Availability",
+    "dataTypeName" : "number",
+    "description" : "Integer between 1 and 5, with 1 representing a surplus, 5 representing a shortage, and 3 representing an adequate truck supply.",
+    "fieldName" : "availability",
+    "position" : 16,
+    "renderTypeName" : "number",
+    "tableColumnId" : 78961550,
+    "cachedContents" : {
+      "non_null" : "207024",
+      "largest" : "5",
+      "null" : "0",
+      "top" : [ {
+        "item" : "3",
+        "count" : "127264"
+      }, {
+        "item" : "4",
+        "count" : "30698"
+      }, {
+        "item" : "5",
+        "count" : "23144"
+      }, {
+        "item" : "2",
+        "count" : "14153"
+      }, {
+        "item" : "1",
+        "count" : "11765"
+      } ],
+      "smallest" : "1",
+      "count" : "207024",
+      "cardinality" : "207024"
+    },
+    "format" : {
+      "precision" : "0"
+    }
+  } ],
+  "grants" : [ {
+    "inherited" : false,
+    "type" : "viewer",
+    "flags" : [ "public" ]
+  } ],
+  "metadata" : {
+    "custom_fields" : {
+      "Scope" : {
+        "Temporal Unit" : "Week",
+        "Temporal Coverage" : "weekly"
+      }
+    },
+    "rowIdentifier" : 467640350,
+    "availableDisplayTypes" : [ "table", "fatrow", "page" ]
+  },
+  "owner" : {
+    "id" : "aiqt-4thn",
+    "displayName" : "Jesse Gastelle",
+    "screenName" : "Jesse Gastelle",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "query" : { },
+  "rights" : [ "read" ],
+  "tableAuthor" : {
+    "id" : "aiqt-4thn",
+    "displayName" : "Jesse Gastelle",
+    "screenName" : "Jesse Gastelle",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "tags" : [ "refrigerated truck", "fruit", "vegetables", "truck rates", "truck availability" ],
+  "flags" : [ "default", "federated", "internalToPublicFederatedView", "ownerMayBeContacted", "restorable", "restorePossibleForType" ]
+}

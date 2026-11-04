@@ -1,0 +1,20 @@
+# Entorno virtual (cada quien crea el suyo con requirements.txt)
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Archivos sin comprimir del dataset (se versiona solo el .csv.gz)
+data/raw/*.csv
