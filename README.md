@@ -1,6 +1,6 @@
 # Pronóstico mensual de tarifas spot de camión refrigerado por lane
 
-[![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/TU_USUARIO/reefer-spot-rate-forecasting/blob/main/ML_EDA_Equipo1.ipynb)
+[![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jmartinezvogel/reefer-spot-rate-forecasting/blob/main/ML_EDA_Equipo1.ipynb)
 
 Proyecto Integrador de **Inteligencia Artificial y Aprendizaje Automático (TC4058.2)**, Maestría en Inteligencia Artificial Aplicada, Tecnológico de Monterrey.
 
@@ -41,7 +41,7 @@ Se necesita **Python 3.11 o superior**.
 
 ### macOS / Linux
 ```bash
-git clone https://github.com/TU_USUARIO/reefer-spot-rate-forecasting.git
+git clone https://github.com/jmartinezvogel/reefer-spot-rate-forecasting.git
 cd reefer-spot-rate-forecasting
 python3 -m venv .venv
 source .venv/bin/activate
@@ -50,7 +50,7 @@ pip install -r requirements.txt
 
 ### Windows (PowerShell)
 ```powershell
-git clone https://github.com/TU_USUARIO/reefer-spot-rate-forecasting.git
+git clone https://github.com/jmartinezvogel/reefer-spot-rate-forecasting.git
 cd reefer-spot-rate-forecasting
 py -3.11 -m venv .venv
 .venv\Scripts\Activate.ps1
