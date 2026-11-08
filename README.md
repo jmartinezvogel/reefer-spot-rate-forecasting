@@ -1,7 +1,5 @@
 # Pronóstico mensual de tarifas spot de camión refrigerado por lane
 
-[![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jmartinezvogel/reefer-spot-rate-forecasting/blob/main/ML_EDA_Equipo1.ipynb)
-
 Proyecto Integrador de **Inteligencia Artificial y Aprendizaje Automático (TC4058.2)**, Maestría en Inteligencia Artificial Aplicada, Tecnológico de Monterrey.
 
 **Equipo 1**
@@ -12,7 +10,8 @@ Proyecto Integrador de **Inteligencia Artificial y Aprendizaje Automático (TC40
 
 ## Pregunta predictiva
 
-¿Cuál será la tarifa spot (USD por carga) del mes siguiente para cada lane (origen y destino) de camión refrigerado? El caso es el de un distribuidor de frutas y verduras frescas que necesita estimar el costo de flete para su presupuesto y para decidir cuándo conviene amarrar un contrato.
+¿Cuál será la tarifa spot *(USD por carga)* del mes siguiente para cada lane (origen y destino) de camión refrigerado?
+- El caso es el de un distribuidor de frutas y verduras frescas que necesita estimar el costo de flete para su presupuesto y para decidir cuándo conviene firmar un contrato.
 
 ## Fuentes de datos
 
@@ -60,14 +59,16 @@ pip install -r requirements.txt
 Después se abre "ML_EDA_Equipo1.ipynb" en VS Code o Jupyter, se selecciona el kernel de ".venv" y se ejecuta con **Run All**.
 
 ### Google Colab
-Con el botón **Abrir en Colab** de arriba el notebook corre en la nube sin instalar nada. En ese caso los datos se descargan directamente desde las APIs.
+[![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jmartinezvogel/reefer-spot-rate-forecasting/blob/main/ML_EDA_Equipo1.ipynb)
+
+Con el botón **Abrir en Colab** corre en la nube sin instalar nada. En ese caso los datos se descargan directamente desde las APIs.
 
 ## Reproducibilidad
 
-- El notebook usa rutas relativas, por lo que funciona en cualquier computadora sin cambiar nada.
+- El notebook funciona en cualquier computadora sin cambiar nada.
 - Los datos originales ya vienen en "data/raw", así que el notebook corre completo **aunque no haya internet** o la API de USDA no esté disponible. Si se borran esos archivos, el notebook los vuelve a descargar.
 - USDA actualiza el dataset cada semana. Para trabajar con la versión más reciente basta con borrar "data/raw/usda_refrigerated_truck_rates_raw.csv.gz" y volver a ejecutar.
-- Las transformaciones que aprenden parámetros (imputación, escalamiento, codificación) se ajustan solo con el conjunto de entrenamiento para evitar fuga de información.
+- Las transformaciones que aprenden parámetros (imputación, escalamiento, codificación) se ajustan *solo con el conjunto de entrenamiento* para evitar fuga de información.
 
 ## Referencias
 
