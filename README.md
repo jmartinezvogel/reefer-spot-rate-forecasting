@@ -25,12 +25,13 @@ Ambas son datos abiertos del gobierno de EE. UU. y no contienen datos personales
 ## Estructura
 
 ```
-├── ML_EDA_Equipo1.ipynb   Entregable 3: carga, EDA, calidad y preparación
+├── ML_EDA_Equipo1.ipynb     Entregable 3: carga, EDA, calidad y preparación
+├── ML_Modelo_Equipo1.ipynb  Entregable 4: entrenamiento, validación y evaluación del modelo
 ├── requirements.txt       Bibliotecas con versiones fijas
 ├── .python-version        Versión de Python (3.11)
 ├── data/
 │   ├── raw/               Copias originales descargadas (no se modifican)
-│   └── processed/         Datos limpios generados por el notebook
+│   └── processed/         Datos limpios (E3), predicciones de prueba y proyección (E4)
 └── docs/                  Presentación y notebook exportado a HTML
 ```
 
@@ -56,7 +57,10 @@ py -3.11 -m venv .venv
 pip install -r requirements.txt
 ```
 
-Después se abre "ML_EDA_Equipo1.ipynb" en VS Code o Jupyter, se selecciona el kernel de ".venv" y se ejecuta con **Run All**.
+Después se abre el notebook en VS Code o Jupyter, se selecciona el kernel de ".venv" y se ejecuta con **Run All**. El orden es:
+
+1. "ML_EDA_Equipo1.ipynb" descarga los datos y genera "data/processed/lanes_modelo.csv".
+2. "ML_Modelo_Equipo1.ipynb" lee ese archivo y el del diésel en "data/raw", entrena el modelo y lo evalúa. Como los dos archivos ya vienen en el repositorio, este notebook se puede correr directo, sin internet.
 
 ### Google Colab
 [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jmartinezvogel/reefer-spot-rate-forecasting/blob/main/ML_EDA_Equipo1.ipynb)
@@ -69,6 +73,15 @@ Con el botón **Abrir en Colab** corre en la nube sin instalar nada. En ese caso
 - Los datos originales ya vienen en "data/raw", así que el notebook corre completo **aunque no haya internet** o la API de USDA no esté disponible. Si se borran esos archivos, el notebook los vuelve a descargar.
 - USDA actualiza el dataset cada semana. Para trabajar con la versión más reciente basta con borrar "data/raw/usda_refrigerated_truck_rates_raw.csv.gz" y volver a ejecutar.
 - Las transformaciones que aprenden parámetros (imputación, escalamiento, codificación) se ajustan *solo con el conjunto de entrenamiento* para evitar fuga de información.
+
+## Resultados del Entregable 4
+
+| Pronóstico en prueba (ene-2025 a oct-2026) | MAE (USD por carga) | RMSE | WAPE |
+|---|---|---|---|
+| Gradient Boosting que predice el cambio contra el mes anterior | 338 | 519 | 5.9% |
+| Baseline ingenuo (repetir el mes anterior) | 358 | 557 | 6.2% |
+
+El modelo se eligió con validación cruzada temporal (TimeSeriesSplit por meses, 2020 a 2024) y el conjunto de prueba se usó una sola vez.
 
 ## Referencias
 
