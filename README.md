@@ -59,8 +59,8 @@ pip install -r requirements.txt
 
 Después se abre el notebook en VS Code o Jupyter, se selecciona el kernel de ".venv" y se ejecuta con **Run All**. El orden es:
 
-1. "ML_EDA_Equipo1.ipynb" descarga los datos y genera "data/processed/lanes_modelo.csv".
-2. "ML_Modelo_Equipo1.ipynb" lee ese archivo y el del diésel en "data/raw", entrena el modelo y lo evalúa. Como los dos archivos ya vienen en el repositorio, este notebook se puede correr directo, sin internet.
+1. "ML_EDA_Equipo1.ipynb" descarga los datos y genera "data/processed/lanes_mensual.csv" (todas las lanes) y "lanes_modelo.csv".
+2. "ML_Modelo_Equipo1.ipynb" verifica la versión de la copia de USDA, lee "lanes_mensual.csv" y el diésel en "data/raw", elige las lanes en cada corte, entrena el modelo y lo evalúa. Como los archivos ya vienen en el repositorio, este notebook se puede correr directo, sin internet.
 
 ### Google Colab
 [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jmartinezvogel/reefer-spot-rate-forecasting/blob/main/ML_EDA_Equipo1.ipynb)
@@ -71,17 +71,19 @@ Con el botón **Abrir en Colab** corre en la nube sin instalar nada. En ese caso
 
 - El notebook funciona en cualquier computadora sin cambiar nada.
 - Los datos originales ya vienen en "data/raw", así que el notebook corre completo **aunque no haya internet** o la API de USDA no esté disponible. Si se borran esos archivos, el notebook los vuelve a descargar.
-- USDA actualiza el dataset cada semana. Para trabajar con la versión más reciente basta con borrar "data/raw/usda_refrigerated_truck_rates_raw.csv.gz" y volver a ejecutar.
+- USDA actualiza el dataset cada semana. Los resultados de los entregables 3 y 4 usan la copia local de **207,024 registros, con semanas del 4 de enero de 2000 al 27 de octubre de 2026** (SHA-256 "006237410b57...6bb9"). Los registros adicionales que muestra el servidor después de esa fecha son semanas publicadas más tarde; por ejemplo, los 207,109 que reportaba al correr el E3 incluyen 85 registros de la semana del 3 de noviembre de 2026, un mes incompleto que no entra al análisis. El notebook del E4 se detiene si la copia local no es esta versión.
+- Para trabajar con una versión más reciente basta con borrar "data/raw/usda_refrigerated_truck_rates_raw.csv.gz" y volver a ejecutar el E3, aunque entonces los resultados ya no coincidirán con los reportados.
 - Las transformaciones que aprenden parámetros (imputación, escalamiento, codificación) se ajustan *solo con el conjunto de entrenamiento* para evitar fuga de información.
 
 ## Resultados del Entregable 4
 
 | Pronóstico en prueba (ene-2025 a oct-2026) | MAE (USD por carga) | RMSE | WAPE |
 |---|---|---|---|
-| Gradient Boosting que predice el cambio contra el mes anterior | 338 | 519 | 5.9% |
-| Baseline ingenuo (repetir el mes anterior) | 358 | 557 | 6.2% |
+| Gradient Boosting que predice el cambio contra el mes anterior (amortiguado) | 295 | 492 | 5.5% |
+| Baseline ingenuo (repetir el mes anterior) | 299 | 504 | 5.6% |
+| Baseline estacional (mismo mes del año anterior) | 632 | 1,054 | 11.7% |
 
-El modelo se eligió con validación cruzada temporal (TimeSeriesSplit por meses, 2020 a 2024) y el conjunto de prueba se usó una sola vez.
+Las lanes se eligen en cada corte histórico usando solo la información disponible hasta ese momento, el modelo se eligió con validación cruzada temporal (TimeSeriesSplit por meses, 2020 a 2024) y el conjunto de prueba se usó una sola vez. La mejora contra el baseline ingenuo es pequeña (1.5% en MAE, intervalo de 95% de 0.3% a 2.6%); una versión anterior que usaba las 94 lanes elegidas con información de 2026 reportaba 5.5%, y la diferencia se debía al sesgo de selección.
 
 ## Referencias
 
