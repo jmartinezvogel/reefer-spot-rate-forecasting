@@ -63,9 +63,12 @@ Después se abre el notebook en VS Code o Jupyter, se selecciona el kernel de ".
 2. "ML_Modelo_Equipo1.ipynb" verifica la versión de la copia de USDA, lee "lanes_mensual.csv", la copia semanal de USDA (para la última semana de cada mes) y el diésel en "data/raw", elige las lanes en cada corte, entrena el modelo y lo evalúa. Como los archivos ya vienen en el repositorio, este notebook se puede correr directo, sin internet.
 
 ### Google Colab
-[![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jmartinezvogel/reefer-spot-rate-forecasting/blob/main/ML_EDA_Equipo1.ipynb)
+| Notebook | |
+|---|---|
+| Entregable 3: EDA y preparación | [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jmartinezvogel/reefer-spot-rate-forecasting/blob/main/ML_EDA_Equipo1.ipynb) |
+| Entregable 4: modelo y evaluación | [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jmartinezvogel/reefer-spot-rate-forecasting/blob/main/ML_Modelo_Equipo1.ipynb) |
 
-Con el botón **Abrir en Colab** corre en la nube sin instalar nada. En ese caso los datos se descargan directamente desde las APIs.
+Con el botón **Abrir en Colab** corre en la nube sin instalar nada. El E3 descarga los datos desde las APIs y el E4 clona el repositorio para tener los archivos de "data/".
 
 ## Reproducibilidad
 
