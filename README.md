@@ -60,7 +60,7 @@ pip install -r requirements.txt
 Después se abre el notebook en VS Code o Jupyter, se selecciona el kernel de ".venv" y se ejecuta con **Run All**. El orden es:
 
 1. "ML_EDA_Equipo1.ipynb" descarga los datos y genera "data/processed/lanes_mensual.csv" (todas las lanes) y "lanes_modelo.csv".
-2. "ML_Modelo_Equipo1.ipynb" verifica la versión de la copia de USDA, lee "lanes_mensual.csv" y el diésel en "data/raw", elige las lanes en cada corte, entrena el modelo y lo evalúa. Como los archivos ya vienen en el repositorio, este notebook se puede correr directo, sin internet.
+2. "ML_Modelo_Equipo1.ipynb" verifica la versión de la copia de USDA, lee "lanes_mensual.csv", la copia semanal de USDA (para la última semana de cada mes) y el diésel en "data/raw", elige las lanes en cada corte, entrena el modelo y lo evalúa. Como los archivos ya vienen en el repositorio, este notebook se puede correr directo, sin internet.
 
 ### Google Colab
 [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jmartinezvogel/reefer-spot-rate-forecasting/blob/main/ML_EDA_Equipo1.ipynb)
@@ -79,11 +79,12 @@ Con el botón **Abrir en Colab** corre en la nube sin instalar nada. En ese caso
 
 | Pronóstico en prueba (ene-2025 a oct-2026) | MAE (USD por carga) | RMSE | WAPE |
 |---|---|---|---|
-| Gradient Boosting que predice el cambio contra el mes anterior (amortiguado) | 295 | 492 | 5.5% |
+| Gradient Boosting que parte de la última semana del mes anterior | 242 | 428 | 4.5% |
 | Baseline ingenuo (repetir el mes anterior) | 299 | 504 | 5.6% |
 | Baseline estacional (mismo mes del año anterior) | 632 | 1,054 | 11.7% |
+| Referencia: última semana del mes anterior | 245 | 435 | 4.5% |
 
-Las lanes se eligen en cada corte histórico usando solo la información disponible hasta ese momento, el modelo se eligió con validación cruzada temporal (TimeSeriesSplit por meses, 2020 a 2024) y el conjunto de prueba se usó una sola vez. La mejora contra el baseline ingenuo es pequeña (1.5% en MAE, intervalo de 95% de 0.3% a 2.6%); una versión anterior que usaba las 94 lanes elegidas con información de 2026 reportaba 5.5%, y la diferencia se debía al sesgo de selección.
+El modelo reduce el error 19% contra repetir el mes anterior (intervalo de 95% de 8.1% a 29.3%) y 22% en la validación cruzada (TimeSeriesSplit por meses, 2020 a 2024). Las lanes se eligen en cada corte histórico usando solo la información disponible hasta ese momento y la prueba se usó una sola vez. La mayor parte de la mejora viene de usar la última semana publicada del mes que cerró, que ya se conoce al pronosticar; una regla que solo usa esa semana logra casi lo mismo.
 
 ## Referencias
 
