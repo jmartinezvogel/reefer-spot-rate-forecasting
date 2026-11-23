@@ -1,5 +1,9 @@
 # Pronóstico mensual de tarifas spot de camión refrigerado por lane
 
+[![Abrir el proyecto final en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jmartinezvogel/reefer-spot-rate-forecasting/blob/main/ML_ProyectoFinal_Equipo3.ipynb)
+
+El botón abre el notebook del proyecto final en Google Colab; basta con **Entorno de ejecución → Ejecutar todas** (Run All) y el notebook descarga solo los datos del repositorio.
+
 Proyecto Integrador de **Inteligencia Artificial y Aprendizaje Automático (TC4058.2)**, Maestría en Inteligencia Artificial Aplicada, Tecnológico de Monterrey.
 
 **Equipo 1**
@@ -27,12 +31,13 @@ Ambas son datos abiertos del gobierno de EE. UU. y no contienen datos personales
 ```
 ├── ML_EDA_Equipo1.ipynb     Entregable 3: carga, EDA, calidad y preparación
 ├── ML_Modelo_Equipo1.ipynb  Entregable 4: entrenamiento, validación y evaluación del modelo
+├── ML_ProyectoFinal_Equipo3.ipynb  Proyecto final: notebook de la demostración
 ├── requirements.txt       Bibliotecas con versiones fijas
 ├── .python-version        Versión de Python (3.11)
 ├── data/
 │   ├── raw/               Copias originales descargadas (no se modifican)
 │   └── processed/         Datos limpios (E3), predicciones de prueba y proyección (E4)
-└── docs/                  Presentación y notebook exportado a HTML
+└── docs/                  Presentaciones de los entregables y del proyecto final
 ```
 
 ## Cómo ejecutarlo
@@ -67,6 +72,7 @@ Después se abre el notebook en VS Code o Jupyter, se selecciona el kernel de ".
 |---|---|
 | Entregable 3: EDA y preparación | [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jmartinezvogel/reefer-spot-rate-forecasting/blob/main/ML_EDA_Equipo1.ipynb) |
 | Entregable 4: modelo y evaluación | [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jmartinezvogel/reefer-spot-rate-forecasting/blob/main/ML_Modelo_Equipo1.ipynb) |
+| Proyecto final: demostración | [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jmartinezvogel/reefer-spot-rate-forecasting/blob/main/ML_ProyectoFinal_Equipo3.ipynb) |
 
 Con el botón **Abrir en Colab** corre en la nube sin instalar nada. El E3 descarga los datos desde las APIs y el E4 clona el repositorio para tener los archivos de "data/".
 
@@ -88,6 +94,15 @@ Con el botón **Abrir en Colab** corre en la nube sin instalar nada. El E3 desca
 | Referencia: última semana del mes anterior | 245 | 435 | 4.5% |
 
 El modelo reduce el error 19% contra repetir el mes anterior (intervalo de 95% de 8.1% a 29.3%) y 22% en la validación cruzada (TimeSeriesSplit por meses, 2020 a 2024). Las lanes se eligen en cada corte histórico usando solo la información disponible hasta ese momento y la prueba se usó una sola vez. La mayor parte de la mejora viene de usar la última semana publicada del mes que cerró, que ya se conoce al pronosticar; una regla que solo usa esa semana logra casi lo mismo.
+
+## Proyecto final
+
+"ML_ProyectoFinal_Equipo3.ipynb" es la versión resumida del Entregable 4 para la presentación ejecutiva y la demostración. Parte de los datos originales de "data/raw", no necesita internet, corre en menos de un minuto y reproduce las mismas cifras. La presentación está en "docs/ML_PresentacionFinal_Equipo3.pptx".
+
+Incluye la retroalimentación del Entregable 4:
+
+- **Independencia de la prueba.** La prueba se midió en tres versiones del proyecto (MAE de 338, 295 y 242). Dentro de cada versión ninguna decisión se tomó con la prueba: el algoritmo, la hoja mínima y el factor se eligieron solo con la validación cruzada, que confirmó la mejora por su cuenta (gana los 5 años, con 22% menos error). Aun así, el 19% se reporta como una estimación algo optimista.
+- **¿Vale la pena el algoritmo?** Contra la regla de la última semana el modelo mejora solo 1.0% del MAE (IC 95% de 0.2% a 1.9%) y gana 11 de 22 meses de prueba. La recomendación es usar la regla como base y el modelo como retador durante tres meses en paralelo.
 
 ## Referencias
 
